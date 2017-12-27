@@ -1,0 +1,18 @@
+---
+pages:
+- posts.html
+- index.html
+- about.md
+- 404.md
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: page
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
