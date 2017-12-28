@@ -8,14 +8,28 @@ resources: https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-re
 updated: ''
 published: ''
 ---
+If there is a need to rename a git branch follow these steps.
+
 ## Rename your local branch
 
- If you are on the branch you want to rename run
+ If you are on the branch you want to rename run:
  ```bash
  git branch -m new_name
  ```
- 
-and push it to remote.
+ or if you are on a different branch run:
+ ```bash
+ git branch -m old_name new_name
+ ```
+
+## Push to remote
+```bash
+git push origin new_name
+```
+or
+```bash
+git push origin HEAD
+```
+if you don't want to type name of new branch (git can obtain the branch name itself)
 
 ## Delete old remote branch
 In case old branch is already on remote, you will need to delete it:
