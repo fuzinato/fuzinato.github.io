@@ -1,9 +1,8 @@
 ---
 pages:
+- _posts/renaming-git-branch.md
 - _posts/updating-ruby-version-on-netlify.md
 - _posts/2017-12-27-hello-world.md
-- _posts/2016-10-18-typography.md
-- _posts/2015-09-06-lorem-ipsum.md
 hide_body: false
 fields:
 - name: title
