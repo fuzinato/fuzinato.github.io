@@ -5,4 +5,6 @@ category:
 tags:
 resources:
 ---
-Hello World
+```bash
+echo hello world
+```
