@@ -5,7 +5,7 @@ layout: default
 <section>
 
     {% for post in paginator.posts %}
-    <article class="post">
+    <article>
       <header class="post-header">
       
         <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta m-mono">{{ post.date | date: "%d %b %Y" }}</time>
