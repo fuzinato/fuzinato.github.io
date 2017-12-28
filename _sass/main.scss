@@ -4,11 +4,12 @@ body {
   font-weight: normal;
   font-style: normal;
   font-family: 'Cabin', sans-serif;
-  font-size: 15px;
+  font-size: 100%;
   line-height: 1.9;
   // font-family: consolas, monaco, courier, "courier new", fixed-width;
-  color: #333333;
-  padding: 20px;
+  color: #111;
+  background-color: #fafafa;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -23,10 +24,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.9;
-  font-weight: normal;
-  margin: 2rem 0 1.5rem;
+  font-weight: 700;
+  margin: 1em 0;
 }
 img {
   max-width: 100%;
@@ -87,7 +88,7 @@ pre {
 }
 code {
   color: #f14e32;
-  background: #eee;
+  background: #fdfdfd;
   padding: 2px 6px;
   font-size: 14px;
 }
@@ -99,7 +100,7 @@ pre {
   line-height: 1.4;
   white-space: pre;
   overflow-x: auto;
-  background-color: #fcfcfc;
+  background-color: #fdfdfd;
   border: 1px dashed #ddd;
   padding: 10px;
   code {
@@ -128,17 +129,22 @@ table {
 iframe {
   width: 100%;
 }
-header {
-  margin: 2rem 0;
+header.post-header {
+  margin-bottom: 2rem;
+
+  .title {
+    margin: 0;
+  }
 }
 
 article {
   background-color: #fff;
-  margin-bottom: 3vw;
+  padding: 4vw 5vw;
+  margin-bottom: 5vw;
 
   h1 {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700
   }
   .center {
@@ -192,7 +198,7 @@ article {
   background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
   background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
   height: 1px;
-  margin: 1rem 0;
+  margin: 5vw 0;
 }
 .back {
   text-align: center;
@@ -213,10 +219,10 @@ article {
   display: block;
 }
 .page-navigation,
-.footer {
+.page-footer {
   text-align: center;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 1rem auto;
   font-size: 0.8rem;
 }
 .page-navigation {
@@ -239,11 +245,15 @@ article {
   }
 }
 .post-meta{
-  font-size: 14px;
+  font-size: 13px;
+  color: #ccc;
+}
+.site-header {
+  margin: 2rem 0;
 }
 main {
-  min-width: 35rem;
-  max-width: 40%;
+  min-width: 30rem;
+  max-width: 50%;
   flex: 0 1 auto;
 }
 section {
