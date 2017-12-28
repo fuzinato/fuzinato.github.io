@@ -11,18 +11,18 @@ layout: default
         <h1 class="title">
           <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
         </h1>
-        <span class="post-meta m-mono">
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%d %b %Y" }}
-          </time>
-        </span>
+        
       </header>
     
       <div class="post-content">
         {{ post.content }}
       </div>
       <!-- /.post-content -->
-    
+      <span class="post-meta m-mono">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%d %b %Y" }}
+          </time>
+        </span>
     </article>
 
     <div class="divider"></div>
