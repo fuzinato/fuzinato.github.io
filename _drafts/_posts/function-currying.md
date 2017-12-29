@@ -6,21 +6,21 @@ category: Theory
 tags: Elm, functional programming
 resources: ''
 ---
-While learning [http://elm-lang.org](Elm) I came across concept common in functional programming called Currying, where you partially execute some function and return a function that composes the first one.
+While learning [http://elm-lang.org](Elm) I came across concept common in functional programming called __Currying__, where you partially execute some function and return a function that composes the first one.
 
 Here is an example in Elm:
 
-Lets say there is a function that divides 2 numbers and returns string:
+Let's write  a function that divides 2 numbers and returns difference as a string:
 ```elm 
 divideNumbers: Float -> Float -> String
-divideNumbers divisor divident = 
-  divident / divisor
+divideNumbers divisor dividend = 
+  dividend / divisor
   	|> toString
 ```
-Now lets say there we want to make a function that always divides by 2 (divisor = 2). We could compone new function from `divideNumber`:
+Now lets say there we want to make a function that always divides by 2 (divisor = 2). We could create new function using `divideNumber` fn:
 ```elm
 divideBy2: Float -> String
 divideBy2 =
 	divideNumbers 2
 ```
-  
+sdf sdfsdf 
