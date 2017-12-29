@@ -1,0 +1,39 @@
+---
+pages:
+- _posts/2017-12-29-function-currying.md
+- _posts/2017-12-28-using-vscode-for-file-diff.md
+- _posts/2017-12-28-renaming-git-branch.md
+- _posts/updating-ruby-version-on-netlify.md
+- _posts/2017-12-27-hello-world.md
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: category
+  label: Category
+  type: text
+  hidden: false
+  default: ''
+- name: tags
+  label: Tags
+  type: text
+  hidden: false
+  default: ''
+- name: resources
+  label: Resources
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: post
