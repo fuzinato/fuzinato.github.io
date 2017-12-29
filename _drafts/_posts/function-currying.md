@@ -17,10 +17,9 @@ divideNumbers divisor dividend =
   dividend / divisor
   	|> toString
 ```
-Now lets say there we want to make a function that always divides by 2 (divisor = 2). We could create new function using `divideNumber` fn:
+Now lets say there we want to make a function that always divides by 2 (divisor = 2). We can create a new function using `divideNumber` fn:
 ```elm
 divideBy2: Float -> String
 divideBy2 =
 	divideNumbers 2
 ```
-sdf sdfsdf 
