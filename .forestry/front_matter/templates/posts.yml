@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/function-currying.md
 - _posts/2017-12-28-using-vscode-for-file-diff.md
 - _posts/2017-12-28-renaming-git-branch.md
 - _posts/updating-ruby-version-on-netlify.md
