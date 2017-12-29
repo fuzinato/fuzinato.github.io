@@ -6,7 +6,7 @@ category: Theory
 tags: Elm, functional programming
 resources: ''
 ---
-While learning [http://elm-lang.org](Elm) I came across concept common in functional programming called __Currying__, where you partially execute some function and return a function that composes the first one.
+While learning [Elm](http://elm-lang.org) I came across concept common in functional programming called __Currying__, where you partially execute some function and return a function that composes the first one.
 
 Here is an example in Elm:
 
