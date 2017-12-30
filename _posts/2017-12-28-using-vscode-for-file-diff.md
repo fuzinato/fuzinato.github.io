@@ -9,4 +9,4 @@ categories: workflow
 ---
 Until now I've been using [meld](http://meldmerge.org/) for comparing files, but now VSCode (v1.19.1) has similar functionality. It is called **Compare Active File with Clipboard** and it's self explanatory.
 
-Default key combination is `Ctrl+K C` but as everything, it can be canged in settings: `workbench.files.action.compareWithClipboard`.
+Default key combination is `Ctrl+K C` but it can be changed in settings: `workbench.files.action.compareWithClipboard`.
