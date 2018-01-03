@@ -6,8 +6,8 @@ tags: elm, framework
 resources: https://www.brianthicks.com/post/2016/12/29/adding-new-fields-to-your-json-decoder/
 category: ''
 ---
-It seems that parsing JSON into Elm's model is not that easy. For start, package that comes with elm does not let you map more than 8 fields in object (v 0.18), so they recommend using external package [elm-decode-pipeline](http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest). 
-My main issue was parsing optional nested model inside main model. Parent model looks like this:
+It seems that parsing JSON into Elm's model is not that easy. For start, the package that comes with elm does not let you map more than 8 fields in an object (v 0.18), so they recommend using external package [elm-decode-pipeline](http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest). 
+My main issue was parsing optional nested model inside the main model. Parent model looks like this:
 ```elm
 type alias Meetup =
     { name : String
@@ -26,7 +26,7 @@ type alias Coordinates =
 ```
 
 ### Decoding values
-In order to properly decode optional values we need decoder for both "Model" and "Coordinate" model. They look as following:
+In order to properly decode optional values, we need a decoder for both "Model" and "Coordinate" model. They look as following:
 ```elm
 coordinatesDecoder : Decode.Decoder Coordinates
 coordinatesDecoder =
