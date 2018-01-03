@@ -17,7 +17,7 @@ type alias Meetup =
     ...
     }
 ```
-and optional (Coordinate) model:
+and optional (_Coordinates_) model:
 ```elm 
 type alias Coordinates =
     { latitude : String
@@ -26,7 +26,7 @@ type alias Coordinates =
 ```
 
 ### Decoding values
-In order to properly decode optional values, we need a decoder for both "Model" and "Coordinate" model. They look as following:
+In order to properly decode optional values, we need a decoder for both _Model_ and _Coordinates_ model. They look as following:
 ```elm
 coordinatesDecoder : Decode.Decoder Coordinates
 coordinatesDecoder =
