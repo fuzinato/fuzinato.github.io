@@ -44,3 +44,21 @@ meetupDecoder =
         |> optional "coordinates" (Decode.map Just coordinatesDecoder) Nothing
         ...
 ```
+
+### Retrieving coordinate values
+When rendering, we need to retrieve keys for coordinate, but they are wrapped in __Just__ elm wrapper.
+Parsing function would do the trick:
+```elm
+getMaybeCoord : Maybe Coordinates -> Coordinates
+getMaybeCoord ma =
+    case ma of
+        Just a ->
+            a
+
+        Nothing ->
+            Coordinates "" ""
+```
+ and using it in view would look something like this:
+ ```elm
+div [] [ text ((getMaybeCoord meetup.coordinates).latitude ++ " " ++ (getMaybeCoord meetup.coordinates).latitude) ]
+```
