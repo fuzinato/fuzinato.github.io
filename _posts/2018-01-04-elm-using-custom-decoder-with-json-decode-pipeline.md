@@ -28,13 +28,6 @@ type alias Coordinates =
 ### Decoding values
 In order to properly decode optional values, we need a decoder for both _Model_ and _Coordinates_ model. They look as following:
 ```elm
-coordinatesDecoder : Decode.Decoder Coordinates
-coordinatesDecoder =
-    decode Coordinates
-        |> required "latitude" Decode.string
-        |> required "longitude" Decode.string
- 
- 
 meetupDecoder : Decode.Decoder Meetup
 meetupDecoder =
     decode Meetup
@@ -43,6 +36,14 @@ meetupDecoder =
         |> optional "url" (Decode.map Just Decode.string) Nothing
         |> optional "coordinates" (Decode.map Just coordinatesDecoder) Nothing
         ...
+        
+        
+coordinatesDecoder : Decode.Decoder Coordinates
+coordinatesDecoder =
+    decode Coordinates
+        |> required "latitude" Decode.string
+        |> required "longitude" Decode.string
+ 
 ```
 
 ### Retrieving coordinate values
