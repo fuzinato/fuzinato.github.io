@@ -58,7 +58,8 @@ getMaybeCoord ma =
         Nothing ->
             Coordinates "" ""
 ```
- and using it in view would look something like this:
+ and using it in view would look something like this [^1]:
  ```elm
 div [] [ text ((getMaybeCoord meetup.coordinates).latitude ++ " " ++ (getMaybeCoord meetup.coordinates).latitude) ]
 ```
+[^1]: Would be better to extract parsing of coordinated to another function, but for my demo it would suffice
