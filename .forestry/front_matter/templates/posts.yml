@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/elm-using-custom-decoder-with-json-decode-pipeline.md
 - _posts/2017-12-30-identity-function.md
 - _posts/2017-12-29-function-currying.md
 - _posts/2017-12-28-using-vscode-for-file-diff.md
