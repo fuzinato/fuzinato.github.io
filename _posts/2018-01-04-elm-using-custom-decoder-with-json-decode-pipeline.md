@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optional nested custom decoder in Elm
+title: Optional custom decoder in Elm
 date: 2018-01-03 00:00:00 +0000
 tags: elm, framework
 resources: https://www.brianthicks.com/post/2016/12/29/adding-new-fields-to-your-json-decoder/
