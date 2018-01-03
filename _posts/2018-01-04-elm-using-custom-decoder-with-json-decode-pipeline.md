@@ -6,7 +6,7 @@ tags: elm, framework
 resources: https://www.brianthicks.com/post/2016/12/29/adding-new-fields-to-your-json-decoder/
 category: ''
 ---
-It seems that parsing JSON into Elm's model is not that easy. For start, the package that comes with elm does not let you map more than 8 fields in an object (v 0.18), so they recommend using external package [elm-decode-pipeline](http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest). 
+It seems that parsing JSON into Elm's model is not that easy. For start, the package that comes with elm does not let you map more than 8 fields in an object (v 0.18), so they recommend using external package [elm-decode-pipeline](http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest){:target="_blank"}. 
 My main issue was parsing optional nested model inside the main model. Parent model looks like this:
 ```elm
 type alias Meetup =
