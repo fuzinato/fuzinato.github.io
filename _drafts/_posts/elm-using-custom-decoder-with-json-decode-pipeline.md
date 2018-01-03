@@ -1,25 +1,45 @@
 ---
 layout: post
-title: 'Elm: Using custom decoder with json-decode-pipeline '
+title: Optional nested custom decoder in Elm
 date: 2018-01-03 00:00:00 +0000
 tags: elm, framework
 resources: https://www.brianthicks.com/post/2016/12/29/adding-new-fields-to-your-json-decoder/
 category: ''
 ---
 It seems that parsing JSON into Elm's model is not that easy. For start, package that comes with elm does not let you map more than 8 fields in object (v 0.18), so they recommend using external package [elm-decode-pipeline](http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest). 
-My main issue was parsing optional nested model inside main model. Main model looks like this:
+My main issue was parsing optional nested model inside main model. Parent model looks like this:
 ```elm
-type alias Model =
-    { day : String
-    ...
+type alias Meetup =
+    { name : String
+    , time: String
+    , url: Maybe String
     , coordinates : Maybe Coordinates
     ...
     }
 ```
-and Coordinate type:
+and optional (Coordinate) model:
 ```elm 
 type alias Coordinates =
     { latitude : String
     , longitude : String 
     }
 ```
+
+### Decoding values
+In order to properly decode optional values we need decoder for both "Model" and "Coordinate" model. They look as following:
+```elm
+coordinatesDecoder : Decode.Decoder Coordinates
+coordinatesDecoder =
+    decode Coordinates
+        |> required "latitude" Decode.string
+        |> required "longitude" Decode.string
+ 
+meetupDecoder : Decode.Decoder Meetup
+meetupDecoder =
+    decode Meetup
+        |> required "name" Decode.string
+        |> required "time" Decode.string
+        |> optional "coordinates" (Decode.map Just coordinatesDecoder) Nothing
+        |> optional "nextMeetup" (Decode.map Just Decode.string) Nothing
+        |> optional "twitter" (Decode.map Just Decode.string) Nothing
+        |> optional "url" (Decode.map Just Decode.string) Nothing
