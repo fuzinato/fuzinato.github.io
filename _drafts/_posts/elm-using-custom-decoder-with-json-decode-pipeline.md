@@ -34,12 +34,13 @@ coordinatesDecoder =
         |> required "latitude" Decode.string
         |> required "longitude" Decode.string
  
+ 
 meetupDecoder : Decode.Decoder Meetup
 meetupDecoder =
     decode Meetup
         |> required "name" Decode.string
         |> required "time" Decode.string
-        |> optional "coordinates" (Decode.map Just coordinatesDecoder) Nothing
-        |> optional "nextMeetup" (Decode.map Just Decode.string) Nothing
-        |> optional "twitter" (Decode.map Just Decode.string) Nothing
         |> optional "url" (Decode.map Just Decode.string) Nothing
+        |> optional "coordinates" (Decode.map Just coordinatesDecoder) Nothing
+        ...
+```
