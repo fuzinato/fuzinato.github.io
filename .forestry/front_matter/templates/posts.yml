@@ -1,6 +1,6 @@
 ---
 pages:
-- _posts/gitlab-protecting-force-push-to-master-branch.md
+- _posts/2018-01-05-gitlab-protecting-force-push-to-master-branch.md
 - _posts/2018-01-04-elm-using-custom-decoder-with-json-decode-pipeline.md
 - _posts/2017-12-30-identity-function.md
 - _posts/2017-12-29-function-currying.md
