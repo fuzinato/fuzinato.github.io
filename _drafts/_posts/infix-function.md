@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infix function
+title: Infix Operators
 date: 2018-01-10 00:00:00 +0000
 category: Programming
 tags: Elm
