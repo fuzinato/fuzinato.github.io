@@ -6,7 +6,6 @@ category: npm
 tags: npm
 resources: https://medium.com/p/422f55a248df/edit
 ---
-Setting default configuration
 After initiating new module (with `npm init -y`) you get default package.json file with mostly empty fields. Setting default values in global configuration can be useful time saver. 
 ```bash
 npm set <key> <value> [-g|--global]
