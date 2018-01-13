@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/npm-cli-setting-default-configuration.md
 - _posts/infix-function.md
 - _posts/2018-01-05-gitlab-protecting-force-push-to-master-branch.md
 - _posts/2018-01-04-elm-using-custom-decoder-with-json-decode-pipeline.md
