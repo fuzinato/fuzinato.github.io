@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/npm-listing-installed-packages.md
 - _posts/2018-01-13-npm-cli-setting-default-configuration.md
 - _posts/infix-function.md
 - _posts/2018-01-05-gitlab-protecting-force-push-to-master-branch.md
