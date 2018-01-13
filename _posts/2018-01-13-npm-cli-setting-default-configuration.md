@@ -14,7 +14,7 @@ For example setting authors name:
 ```bash
 npm set init-author-name "Dario Fuzinato" -g
 ```
-Now every time new package.json is being initiated, author name will be set to it. Properties you can change to default:
+Now every time new package.json is being initiated, author name will be set to it. Here is a list of properties you can change:
 - init-author-name
 - init-author-email
 - init-author-url
