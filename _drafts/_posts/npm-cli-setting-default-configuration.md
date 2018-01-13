@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'npm CLI : Setting default configuration'
+title: Setting default configuration for npm init
 date: 2018-01-09 00:00:00 +0100
 category: npm
 tags: npm
