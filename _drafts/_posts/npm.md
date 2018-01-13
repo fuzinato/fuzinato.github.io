@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'npm: '
-date: 2018-01-13 00:00:00 +0000
+date: 2018-01-17 22:15:48 +0100
 category: ''
 tags: ''
 resources: ''
