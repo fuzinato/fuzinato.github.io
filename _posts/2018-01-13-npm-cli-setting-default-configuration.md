@@ -21,4 +21,4 @@ Now every time new package.json is being initiated, author name will be set to i
 - init-license
 - init-version
 
-All settings are stored in .npmrc file in your root folder `~/.npmrc`
+*Note: All settings are stored in .npmrc file in your root folder `~/.npmrc`*
