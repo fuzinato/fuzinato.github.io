@@ -1,7 +1,10 @@
 ---
 pages:
-- posts.html
+- index2.html
 - index.html
+- blog/index.html
+- til.html
+- posts.html
 - about.md
 - 404.md
 hide_body: false
