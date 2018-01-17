@@ -35,8 +35,12 @@ img {
   max-width: 100%;
 }
 a {
-  color: inherit;
+  color: #374245;
   text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: #508cc6;
+  }
   &.image {
     display: block;
     text-align: center;
@@ -298,9 +302,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  li{
-    margin: 5px 0;
-  }
 }
 .pagination {
   .inline-list {
@@ -350,7 +351,37 @@ ul {
     }
   }
 }
-
+.b-lab-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-size: 13px;
+  a {
+    background: #f4fcfb;
+    padding: 3px;
+    border: none;
+  }
+}
+.b-latest-posts {
+  a {
+    border: none;
+  }
+}
+.b-projects {
+  li {
+    margin: 5px 0;
+  }
+  a {
+    background: #f4fcfb;
+    padding: 3px;
+    border: none;
+  }
+}
+.b-index {
+  time {
+    margin-right: 10px;
+  }
+}
 @keyframes bounce {0% {
     transform: translate3d( 0, -1000px, 0 );
   }
