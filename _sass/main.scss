@@ -1,19 +1,21 @@
+html {
+  background-color: #eef6f6;
+}
 body {
   font-size: 14px;
-  line-height: 20px;
   font-weight: normal;
   font-style: normal;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 100%;
+  margin: 0 auto;
   line-height: 1.9;
   // font-family: consolas, monaco, courier, "courier new", fixed-width;
   color: #111;
-  background-color: #eef6f6;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 30rem;
+  max-width: 50%;
 
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -74,6 +76,9 @@ sup {
   position: relative;
   top: -0.5rem;
   margin-left: 1px;
+}
+.b-social {
+  font-size: 13px;
 }
 .m-mono {
   font-size: 14px;
@@ -250,21 +255,63 @@ article {
     font-weight: 700;
   }
 }
+.m-font-normal {
+  font-weight: normal;
+}
+hr.divide {
+  margin: 25px 0;
+  border: none;
+  border-bottom: 1px dotted #bdd7d7;
+}
 .post-meta{
   font-size: 13px;
   color: #839898;
 }
 .site-header {
+  align-self: baseline;
   margin: 2rem 0;
 }
+a {
+  border-bottom: 1px solid #a7c2c2;
+}
+
+ul {
+  list-style-position: outside;
+}
 main {
-  min-width: 30rem;
-  max-width: 50%;
   flex: 0 1 auto;
 }
-section {
+.logo {
+  padding: 0 6px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: white;
+  background-color: #000;
+  display: inline-block;
+  border: none;
+}
 
-
+.intro {
+  font-weight: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    margin: 5px 0;
+  }
+}
+.pagination {
+  .inline-list {
+    display: flex;
+    justify-content: center;
+     li {
+       padding-left: 5px;
+     }
+  }
+}
+.b-blog-page {
   ul {
     margin: 0;
     padding: 0;
@@ -336,3 +383,4 @@ section {
     -webkit-transform: none;
   }
 }
+

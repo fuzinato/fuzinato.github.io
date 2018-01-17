@@ -1,6 +1,6 @@
 # Site Info
-title:              "Today I Learned"
-description:        "Collection of bits and pieces that I came accross while coding."
+title:              "Dario Fuzinato"
+description:        "Full-stack developer"
 google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
 # Author Info
@@ -32,8 +32,8 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
 
-paginate: 15
-
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 defaults:
   -

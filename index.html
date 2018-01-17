@@ -2,27 +2,54 @@
 layout: default
 ---
 
-<section>
+<section class="b-index">
 
-    {% for post in paginator.posts %}
-    <article>
-      <header class="post-header">
-      
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta m-mono">{{ post.date | date: "%d %b %Y" }}</time>
-        <h1 class="title">
-          <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
-        </h1>
-      </header>
-    
-      <div class="post-content">
-        {{ post.content }}
-      </div>
-      <!-- /.post-content -->
-          
-    </article>
+  <h1 class="intro"><b>Dario Fuzinato</b> — Full-stack developer. My approach involves prototyping, finding right use of technology, experimentation and exploration.</h1>
+  
+  <div class="b-social">
+    <a href="mailto:hi@fuzinato.com" target="blank">hi@fuzinato.com</a>  &#8212;
+    <a href="https://github.com/fussinatto" target="blank">Github</a> &#8212;
+    <a href="https://codepen.io/fussinatto" target="blank">Codepen</a> &#8212;
+    <a href="https://twitter.com/fussinatto" target="blank">Twitter</a> &#8212;
+    <a href="/blog" target="blank">Blog</a>
+  </div>
+  
+  <hr class="divide">
+  <section>
+    <h3>Projects</h3>
+    <ul>
+      <li><a target="blank" href="https://text2svg.online">text2svg.online</a> &#8212; Online tool for converting text to svg. It supports google fonts. Built with React &amp; node.js</li>
+      <li><a target="blank" href="https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek">Vue Peek</a> &#8212; VSCode plugin extends Vue code editing with Go To Definition and Peek Definition support for components and filenames in single-file components with a .vue extension.</li>
+      <li><a target="blank" href="https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vscode-download-file">Download File</a> &#8212; VSCode plugin that lets you download any file directly to your project. </li>
+      <li><a target="blank" href="http://company.airbus.com/theskyisnotthelimit/">Airbus: The Sky Is Not The Limit </a> &#8212; Client project I worked in Aperto</li>
+      <li><a target="blank" href="online chess">Online chess</a> &#8212; As a part of interview process I was asked to code chess game without AI (Yes, I got the job). I converted it into online app. </li>
+      <li><a target="blank" href="https://fuzinato.com">fuzinato.com</a> &#8212; Personal travel/photo journal</li>
+    </ul>
+  </section>
+  <hr class="divide">
+  <section>
+    <h3>Lab <span class="m-font-normal"> - collection of experiments and demos</span></h3>
+    <ul>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/Ywwgxy">Music player with hidden controls </a> </li>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/NGrrQG">Animated menu </a></li>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/WrQzrM">Playing Cards</a></li>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/PwLLjB">Canvas Image Slider </a></li>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/oCiFc">Animated Letters</a></li>
+      <li><a target="blank" href="https://codepen.io/fuzinato/full/iugyw">3D Gallery</a></li>
+    </ul>
+  </section>
 
+  <hr class="divide">
+  <section >
+    <h3>Latest Blog Posts</h3>
+    <ul>
+    {% for post in site.posts limit:5%}    
+        <li><time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta m-mono">{{ post.date | date: "%d %b %Y" }}</time>
+          <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url"> {{ post.title }}</a>
+        </li>
     {% endfor %}
+    </ul>
+    <a href="/blog">Show More</a>
     
-    {% include pagination.html %}
-
+  </section>
 </section>
