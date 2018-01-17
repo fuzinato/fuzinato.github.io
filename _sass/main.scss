@@ -293,6 +293,9 @@ main {
   background-color: #000;
   display: inline-block;
   border: none;
+  &:hover {
+    color:white;
+  }
 }
 
 .intro {
