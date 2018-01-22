@@ -14,11 +14,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 30rem;
+  // min-width: 30rem;
   max-width: 50%;
 
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
 
 }
 h1,
@@ -145,7 +149,10 @@ header.post-header {
     margin: 0;
   }
 }
-
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
 article {
   background-color: #fff;
   padding: 3vw 5vw;
@@ -275,15 +282,14 @@ hr.divide {
   align-self: baseline;
   margin: 2rem 0;
 }
-a {
-  border-bottom: 1px solid #a7c2c2;
-}
+
 
 ul {
   list-style-position: outside;
 }
 main {
   flex: 0 1 auto;
+  width: 100%;
 }
 .logo {
   padding: 0 6px;
@@ -359,62 +365,44 @@ ul {
   -webkit-columns: 2;
   -moz-columns: 2;
   font-size: 13px;
-  a {
-    background: #f4fcfb;
-    padding: 3px;
-    border: none;
+}
+
+
+a {
+  border-bottom: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.2s;
+  padding: 0 2px;
+  &:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #a7c2c2;
+    transition: all 0.2s;
+  }
+  &:hover {
+    color: black;
+    &:before {
+      top: 0%;
+      height: 100%;
+    }
   }
 }
-.b-latest-posts {
-  a {
-    border: none;
-  }
-}
+
+
 .b-projects {
   li {
     margin: 5px 0;
   }
-  a {
-    background: #f4fcfb;
-    padding: 3px;
-    border: none;
-  }
+  
 }
 .b-index {
   time {
     margin-right: 10px;
   }
 }
-@keyframes bounce {0% {
-    transform: translate3d( 0, -1000px, 0 );
-  }
-  60% {
-    transform: translate3d( 0, 25px, 0 );
-  }
-  75% {
-    transform: translate3d( 0, -10px, 0 );
-  }
-  90% {
-    transform: translate3d( 0, 5px, 0 );
-  }
-  100% {
-    transform: none;
-  }
-}
-@-webkit-keyframes bounce {0% {
-    -webkit-transform: translate3d( 0, -1000px, 0 );
-  }
-  60% {
-    -webkit-transform: translate3d( 0, 25px, 0 );
-  }
-  75% {
-    -webkit-transform: translate3d( 0, -10px, 0 );
-  }
-  90% {
-    -webkit-transform: translate3d( 0, 5px, 0 );
-  }
-  100% {
-    -webkit-transform: none;
-  }
-}
-

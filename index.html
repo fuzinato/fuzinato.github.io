@@ -27,7 +27,7 @@ layout: default
     </ul>
   </section>
   <hr class="divide">
-  <section>
+  <section class="b-lab">
     <h3>Lab <span class="m-font-normal"> - collection of experiments and demos</span></h3>
     <ul class="b-lab-list">
       <li><a target="blank" href="https://codepen.io/fuzinato/full/Ywwgxy">Music player with hidden controls </a> </li>
@@ -43,7 +43,7 @@ layout: default
 
   <hr class="divide">
   <section class="b-latest-posts">
-    <h3>Latest Blog Posts</h3>
+    <h3>Latest TIL Posts <a href="/blog" class="m-font-normal">Show All</a></h3>  
     <ul>
     {% for post in site.posts limit:5%}    
         <li><time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta m-mono">{{ post.date | date: "%d %b" }}</time>
@@ -51,7 +51,7 @@ layout: default
         </li>
     {% endfor %}
     </ul>
-    <a href="/blog">Show More</a>
+   
     
   </section>
 </section>
