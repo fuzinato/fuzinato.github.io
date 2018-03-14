@@ -1,5 +1,6 @@
 ---
 pages:
+- react-s-context-api.md
 - _posts/caching-files-with-hash-params.md
 - _posts/2018-01-17-npm-removing-packages.md
 - _posts/2018-01-17-npm.md
