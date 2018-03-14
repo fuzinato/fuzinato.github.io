@@ -8,7 +8,7 @@ resources: http://wesbos.com/react-context/
 ---
 Passing props to deeply nested components in react has been challenging, especially if the app is small and it does not justify having dedicated state management (redux). But as of react 16.3, there is a Context API that helps pass props to children without "props drilling".
 First we need a _context_ `const MyContext = React.createContext()` and create a _provider_ component where state is going to live:
-```javascript
+```jsx
 class MyProvider extends React.Component {
   state = {
     name: 'Dario'
@@ -23,7 +23,7 @@ class MyProvider extends React.Component {
 }
 ```
 Now we can wrap our app or parent component inside _MyProvider_ cpomponent and evety child, regardless how deeply nested, could access value that was passed in MyProvider component.
-```javascript
+```jsx
 class App extends React.Component {
   render() {
     return (
@@ -38,7 +38,7 @@ class App extends React.Component {
 }
 ```
 Now we crate _consumer_ - component which will use date from provider. 
-```javascript
+```jsx
 class Header extends React.Component {
   render() {
     return (
