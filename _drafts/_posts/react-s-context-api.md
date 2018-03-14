@@ -2,4 +2,54 @@
 layout: post
 title: React's Context API
 date: 2018-03-14 00:00:00 +0000
+category: react
+tags: react
+resources: http://wesbos.com/react-context/
 ---
+Passing props to deeply nested components in react has been challenging, especially if the app is small and it does not justify having dedicated state management (redux). But as of react 16.3, there is a Context API that helps pass props to children without "props drilling".
+First we need a _context_ `const MyContext = React.createContext()` and create a _provider_ component where state is going to live:
+```javascript
+class MyProvider extends React.Component {
+  state = {
+    name: 'Dario'
+  }
+  render() {
+    return (
+      <MyContext.Provider value={this.state.name}>
+        {this.props.children}
+      </MyContext.Provider>
+    )
+  }
+}
+```
+Now we can wrap our app or parent component inside _MyProvider_ cpomponent and evety child, regardless how deeply nested, could access value that was passed in MyProvider component.
+```javascript
+class App extends React.Component {
+  render() {
+    return (
+      <MyProvider>
+        <div>
+          <Header />
+          <Menu />
+        </div>
+      </MyProvider>
+    );
+  }
+}
+```
+Now we crate _consumer_ - component which will use date from provider. 
+```javascript
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <MyContext.Consumer>
+          {(context) => (
+            <p>Name: {context.state.name}</p>
+          )}
+        </MyContext.Consumer>
+      </div>
+    )
+  }
+}
+```
