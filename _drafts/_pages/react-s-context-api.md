@@ -11,7 +11,7 @@ First we need a _context_ `const MyContext = React.createContext()` and create a
 ```
 class MyProvider extends React.Component {
   state = {
-  	name: 'Dario'
+    name: 'Dario'
   }
   render() {
     return (
@@ -46,7 +46,7 @@ class Header extends React.Component {
       <div>
         <MyContext.Consumer>
           {(context) => (
-              <p>Name: {context.state.name}</p>
+            <p>Name: {context.state.name}</p>
           )}
         </MyContext.Consumer>
       </div>
