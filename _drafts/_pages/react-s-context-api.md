@@ -22,4 +22,35 @@ class MyProvider extends React.Component {
   }
 }
 ```
-Now we can wrap our app or parent component inside _MyProvider_ cpomponent and evety child regardless how deeply nested cound retrieve value that was passed in MyProvider component
+Now we can wrap our app or parent component inside _MyProvider_ cpomponent and evety child, regardless how deeply nested, could access value that was passed in MyProvider component.
+```
+class App extends React.Component {
+  render() {
+    return (
+      <MyProvider>
+        <div>
+          <Header />
+          <Menu />
+        </div>
+      </MyProvider>
+    );
+  }
+}
+```
+Now we crate _consumer_ - component which will use date from provider. 
+```
+
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <MyContext.Consumer>
+          {(context) => (
+              <p>Name: {context.state.name}</p>
+          )}
+        </MyContext.Consumer>
+      </div>
+    )
+  }
+}
+```
