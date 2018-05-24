@@ -1,13 +1,6 @@
 ---
-pages:
-- index.html
-- index2.html
-- blog/index.html
-- til.html
-- posts.html
-- about.md
-- 404.md
 hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -19,3 +12,11 @@ fields:
   type: text
   hidden: false
   default: ''
+pages:
+- index.html
+- index2.html
+- blog/index.html
+- til.html
+- posts.html
+- about.md
+- 404.md
