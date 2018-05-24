@@ -34,6 +34,7 @@ fields:
   default: post
 pages:
 - react-s-context-api.md
+- _posts/ignoring-cors-during-development.md
 - _posts/2018-03-21-updating-git-remote-url.md
 - _posts/2018-03-14-react-s-context-api.md
 - _posts/caching-files-with-hash-params.md
