@@ -34,7 +34,7 @@ fields:
   default: post
 pages:
 - react-s-context-api.md
-- _posts/enabling-git-hooks-on-react-project.md
+- _posts/2018-06-08-enabling-git-hooks-on-react-project.md
 - _posts/_posts/updating-ruby-version-on-netlify.md
 - _posts/_posts/infix-function.md
 - _posts/_posts/ignoring-cors-during-development.md
