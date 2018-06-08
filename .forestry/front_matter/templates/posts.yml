@@ -34,20 +34,21 @@ fields:
   default: post
 pages:
 - react-s-context-api.md
-- _posts/ignoring-cors-during-development.md
+- _posts/enabling-git-hooks-on-react-project.md
+- _posts/_posts/updating-ruby-version-on-netlify.md
+- _posts/_posts/infix-function.md
+- _posts/_posts/ignoring-cors-during-development.md
+- _posts/_posts/caching-files-with-hash-params.md
 - _posts/2018-03-21-updating-git-remote-url.md
 - _posts/2018-03-14-react-s-context-api.md
-- _posts/caching-files-with-hash-params.md
+- _posts/2017-12-27-hello-world.md
 - _posts/2018-01-17-npm-removing-packages.md
 - _posts/2018-01-17-npm.md
 - _posts/2018-01-13-npm-listing-installed-packages.md
 - _posts/2018-01-13-npm-cli-setting-default-configuration.md
-- _posts/infix-function.md
 - _posts/2018-01-05-gitlab-protecting-force-push-to-master-branch.md
 - _posts/2018-01-04-elm-using-custom-decoder-with-json-decode-pipeline.md
 - _posts/2017-12-30-identity-function.md
 - _posts/2017-12-29-function-currying.md
 - _posts/2017-12-28-using-vscode-for-file-diff.md
 - _posts/2017-12-28-renaming-git-branch.md
-- _posts/updating-ruby-version-on-netlify.md
-- _posts/2017-12-27-hello-world.md
