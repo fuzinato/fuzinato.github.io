@@ -1,0 +1,4 @@
+- react component wrapped in mobx
+- expect(wrapper.find('SearchField').length).toBe(1) = retunrs false
+- expect( wrapper.dive().find('SearchField').length).toBe(1) - returns true
+
